@@ -27,7 +27,7 @@ body {
   background: linear-gradient(135deg, #1d2b64, #f8cdda);
   color: #fff;
   min-height: 100vh;
-  background-image: url(https://wallpapercave.com/wp/wp2603501.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp2603501.jpg), url('img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
