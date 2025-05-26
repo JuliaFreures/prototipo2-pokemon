@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+@font-face {
+  font-family: 'poke';
+  src: url('Pokemon-Hollow.ttf');
+}
+
+@font-face {
+  font-family: 'games';
+  src: url('PixelGamer-Regular.otf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'games', 'Press Start 2P', sans-serif;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  color: #fff;
+  min-height: 100vh;
+  background-image: url(https://wallpapercave.com/wp/wp2603501.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+.titulo {
+  font-size: 50px;
+  color: #ffd900;
+  font-family: 'games', 'Press Start 2P', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+
+.titulo2 {
+  font-size: 65px;
+  color: #ffd900;
+  font-family: 'games', 'Press Start 2P', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+
+.container {
+  background: rgba(0, 0, 0, 0.356);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.381);
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-base {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 20px;
+  font-size: 20px;
+  background: #FF0000;
+  color: #fff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: 'games', 'Press Start 2P', sans-serif;
+  width: 220px;
+  text-align: center;
+}
+
+.btn-base:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Press Start 2P', sans-serif;
+  color: #ffffff;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.back {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 8px 20px;
+  font-size: 12px;
+  background: #00a7faa7;
+  color: #ffffff;
+  border: 2px solid #ffffffbb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: 'games', 'Press Start 2P', sans-serif;
+}
+
+.back:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+.deck-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.deck-card {
+  text-align: center;
+}
+
+.deck-card img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.deck-card h3 {
+  font-size: 20px;
+  color: #ffd900;
+  font-family: 'games';
+  text-shadow: 2px 2px 4px #000;
+}
+
+.pokemon{
+border: 1px solid #ffffff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      max-width: 300px;
+      background-color: #232b8dbb;
+    }
+    .pokemon img {
+      max-width: 100%;
+      height: auto;
+    }
+    .pokemon h2 {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  color: #ffd900;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+}
+.container-pokemons {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+ max-width: 1000px; 
+  margin: 0 auto;
+}
+.btn-pokemon {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #6cc8ef;
+  color: #ffd900;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-family: 'games', 'Press Start 2P', sans-serif;
+}
+.btn-pokemon.selecionado {
+  background-color: #ff1900; 
+  color: white;
+  border-color: #000000;
+}
+@media (max-width: 768px) {
+  .deck-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .deck-card img {
+    width: 150px;
+  }
+
+  .titulo, .titulo2 {
+    font-size: 30px;
+  }
+
+  .btn-base {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
